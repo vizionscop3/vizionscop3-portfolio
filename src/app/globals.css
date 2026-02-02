@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base layer customizations */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-neutral-dark bg-neutral-cream;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+/* Component layer for neubrutomorphism utilities */
+@layer components {
+  .brutal-border {
+    @apply border-2 border-neutral-black;
+  }
+  .brutal-shadow {
+    @apply shadow-brutal-md;
+  }
+  .brutal-card {
+    @apply bg-white brutal-border brutal-shadow rounded-md;
+  }
+}

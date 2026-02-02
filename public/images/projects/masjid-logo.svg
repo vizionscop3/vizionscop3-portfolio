@@ -1,0 +1,123 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B4D3E"/>
+      <stop offset="100%" style="stop-color:#0D2920"/>
+    </linearGradient>
+    
+    <!-- Gold gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4E4A6"/>
+      <stop offset="50%" style="stop-color:#C9A227"/>
+      <stop offset="100%" style="stop-color:#8B7119"/>
+    </linearGradient>
+    
+    <!-- Inner glow -->
+    <radialGradient id="innerGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#2A5F4E"/>
+      <stop offset="100%" style="stop-color:#1B4D3E"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="80" rx="8" fill="url(#bgGrad)"/>
+  
+  <!-- Mihrab Frame (left side) -->
+  <g transform="translate(8, 6)">
+    <!-- Outer mihrab frame -->
+    <path d="
+      M 0 68
+      L 0 22
+      Q 0 4 20 2
+      Q 30 0 40 2
+      Q 60 4 60 22
+      L 60 68
+      L 54 68
+      L 54 23
+      Q 54 8 38 5
+      Q 30 3 22 5
+      Q 6 8 6 23
+      L 6 68
+      Z
+    " fill="url(#goldGrad)"/>
+    
+    <!-- Inner sacred space -->
+    <path d="
+      M 6 68
+      L 6 23
+      Q 6 8 22 5
+      Q 30 3 38 5
+      Q 54 8 54 23
+      L 54 68
+      Z
+    " fill="url(#innerGlow)"/>
+    
+    <!-- Decorative inner arch line -->
+    <path d="
+      M 10 25
+      Q 10 12 24 8
+      Q 30 6 36 8
+      Q 50 12 50 25
+    " fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.4"/>
+    
+    <!-- Crescent Moon -->
+    <g transform="translate(22, 28)">
+      <path d="
+        M 0 -14
+        C -12 -14, -18 -6, -18 2
+        C -18 10, -12 16, 0 16
+        C -8 12, -12 6, -12 2
+        C -12 -4, -8 -10, 0 -14
+        Z
+      " fill="url(#goldGrad)"/>
+    </g>
+    
+    <!-- Star -->
+    <g transform="translate(38, 18)">
+      <path d="
+        M 0 -6
+        L 1.4 -2.2
+        L 5.7 -2.2
+        L 2.3 0.8
+        L 3.5 5
+        L 0 2.4
+        L -3.5 5
+        L -2.3 0.8
+        L -5.7 -2.2
+        L -1.4 -2.2
+        Z
+      " fill="url(#goldGrad)"/>
+    </g>
+    
+    <!-- Three dots at bottom -->
+    <circle cx="24" cy="58" r="2" fill="url(#goldGrad)" opacity="0.5"/>
+    <circle cx="30" cy="58" r="2" fill="url(#goldGrad)" opacity="0.5"/>
+    <circle cx="36" cy="58" r="2" fill="url(#goldGrad)" opacity="0.5"/>
+  </g>
+  
+  <!-- Text: THE MASJID -->
+  <text x="82" y="38" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="14" 
+        font-weight="400"
+        fill="#C9A227" 
+        letter-spacing="3">THE</text>
+  
+  <text x="82" y="56" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="18" 
+        font-weight="400"
+        fill="#C9A227" 
+        letter-spacing="2">MASJID</text>
+  
+  <!-- Decorative line under text -->
+  <rect x="82" y="62" width="70" height="1.5" rx="0.75" fill="url(#goldGrad)" opacity="0.5"/>
+  
+  <!-- Arabic text (small) -->
+  <text x="82" y="74" 
+        font-family="Arial, sans-serif" 
+        font-size="8" 
+        fill="#C9A227" 
+        opacity="0.7">ٱلْمَسْجِد</text>
+</svg>

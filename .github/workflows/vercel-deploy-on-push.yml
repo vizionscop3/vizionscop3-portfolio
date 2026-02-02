@@ -1,0 +1,20 @@
+# Trigger Vercel deployment when code is pushed to main.
+# Uses your Vercel Deploy Hook so every push results in a production deploy.
+#
+# Setup:
+# 1. Vercel → proof → Settings → Git → Deploy Hooks → copy the main-branch hook URL
+# 2. GitHub → vizionscop3/proof → Settings → Secrets and variables → Actions
+# 3. New repository secret: name = VERCEL_DEPLOY_HOOK, value = paste the URL
+
+name: Trigger Vercel deploy on push
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel deployment
+        run: curl -f -sS -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"

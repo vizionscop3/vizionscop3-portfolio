@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- T-Trac Logo: Drop Track -->
+  <!-- A progress ring surrounds a droplet with a checkmark -->
+  
+  <!-- Circular progress track -->
+  <circle cx="256" cy="256" r="208" stroke="url(#mainGradient)" stroke-width="20" stroke-linecap="round" stroke-dasharray="1024 1306" transform="rotate(-90 256 256)"/>
+  
+  <!-- Inner droplet/injection symbol -->
+  <path d="M256 144 C256 144 192 224 192 288 C192 323 220 352 256 352 C292 352 320 323 320 288 C320 224 256 144 256 144Z" fill="url(#mainGradient)"/>
+  
+  <!-- Checkmark inside droplet -->
+  <path d="M230 282 L250 302 L290 262" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5BCEFA"/>
+      <stop offset="50%" stop-color="#F5A9B8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+</svg>
