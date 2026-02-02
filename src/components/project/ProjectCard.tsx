@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             {project.slug === 't-trac' && (
-              <div className="absolute top-2 right-2">
+              <div className="absolute top-2 right-2 z-10">
                 <Badge variant="primary" size="sm">Live</Badge>
               </div>
             )}
