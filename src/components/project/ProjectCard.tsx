@@ -30,11 +30,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               className={project.heroImage.endsWith('.svg') ? 'object-contain p-4' : 'object-cover'}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            {project.links?.demo && !project.links.demo.includes('[') && (
-              <div className="absolute top-2 right-2">
-                <Badge variant="primary" size="sm">Live</Badge>
-              </div>
-            )}
           </div>
           <div className="p-6 flex-1 flex flex-col">
             <div className="flex items-start justify-between mb-2">
