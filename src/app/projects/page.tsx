@@ -48,7 +48,11 @@ export default function ProjectsPage() {
                   }
                 `}
               >
-                {category === 'all' ? 'All' : category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')}
+                {category === 'all'
+                  ? 'All'
+                  : category === 'ai-ml'
+                    ? 'AI/ML'
+                    : category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')}
               </button>
             ))}
           </div>
