@@ -96,7 +96,13 @@ export const projects: Project[] = [
     ],
     links: {
       github: 'https://github.com/[profile]/the-masjid',
+      demo: 'https://themasjid.vercel.app/',
     },
+    outcomes: [
+      'Shipped beta (v5) with AI-powered Islamic education and The Imam companion',
+      'Prayer times, Qibla, Quran & recitation, and guided Salah features',
+      'TestFlight (iOS) and Android APK available for beta testers',
+    ],
     category: ['mobile', 'community'],
     featured: true,
     status: 'completed'
